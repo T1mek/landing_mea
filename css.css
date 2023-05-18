@@ -5,25 +5,162 @@
   font-family: Inter sans-serif;
 }
 .nav{
-  top: 0;
   position: fixed;
+  top: 0;
+  max-width: 1920px;
+  width: 100%;
   background-color:#835FCC ;
   height: 80px;
   display: flex;
   box-shadow: 0 10px 20px rgba(0,0,0,0.25);
 }
 .nav__wrapper{
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 611px;
+  justify-content: space-between;
+  padding: 0 210px;
 }
+.menu__btn {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index:2;
+  overflow: hidden;
+}
+.menu__btn span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  transition: all 0.5s;
+}
+.menu__btn span:nth-of-type(2) {
+  top: calc(50% - 5px);
+}
+.menu__btn span:nth-of-type(3) {
+  top: calc(50% + 5px);
+}
+.menu__btn.transform span:nth-of-type(1) {
+  display: none;
+}
+.menu__btn.transform span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+.menu__btn.transform span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
 .indent{
   margin: 0 210px;
+}
+@media (max-width: 900px) {
+  .nav__wrapper,.footer__main{
+    padding: 0 105px;
+  }
+  .indent{
+    margin: 0 105px;
+  }
+  .img__header{
+    width: 400px;
+  }
+  .nav__list.open{
+    margin-right: 105px !important;
+  }
+  .portfolio__text{
+    max-width: 300px;
+  }
+  .portfolio__text__description{
+    overflow: hidden;
+    text-overflow:ellipsis;
+  }
+
+}
+@media (max-width: 700px) {
+  .nav__wrapper{
+    padding: 0 52px;
+  }
+  .indent{
+    margin: 0 52px;
+  }
+  .nav__list.open{
+    margin-right: 52px !important;
+  }
+}
+@media (max-width:600px){
+  .indent{
+    margin: 0 20px;
+  }
+  .nav__wrapper{
+    padding: 0 20px;
+  }
+  .nav__list.open{
+    margin-right: 20px !important;
+  }
+}
+@media (max-width:426px){
+  .whyMe__cart{
+    min-width: 390px;
+  }
+  .services__wrapper{
+    text-align: center;
+  }
+  .portfolio__main{
+  gap: 15px!important;
+  }
+
+}
+
+
+@media (max-width:601px) {
+  .nav__list.open{
+    width:35%
+  }
+}
+@media (max-width:430px) {
+  .nav__list.open{
+    width:45%
+  }
 }
 .nav__list{
   display: flex;
   list-style-type: none;
   gap: 86px;
+}
+@media(max-width:1248px){
+  .nav__list{
+    position: fixed;
+    top: 0;
+    width: 25%;
+    padding: 15px;
+    background: #E9B5CA;
+    transform: rotateX(90deg);
+  }
+  .nav__list.open {
+    display: flex;
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 210px 0 0;
+    gap:15px;
+    border-radius: 20px;
+    transform: rotateX(0);
+    transition: transform 0.5s ease;
+  }
+  .menu__btn{
+    display:block
+  }
+  .nav__wrapper{
+    justify-content: space-between;
+    gap:0;
+  }
 }
 .nav__item{
   font-weight:500;
@@ -35,6 +172,17 @@
 .header{
   margin-top: 255px;
   display: flex;
+}
+
+@media (max-width: 1910px) {
+  .header{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .header__text{
+    display: flex;
+    flex-direction: column;
+  }
 }
 .header__title{
   margin-top: 29px;
@@ -105,6 +253,7 @@
   align-items: end;
 }
 .whyMe__carts{
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -112,9 +261,19 @@
   grid-row-gap: 54px;
   margin-top: 85px;
 }
+.hidden{
+  overflow: hidden;
+}
+@media (max-width:1910px ) {
+  .whyMe__carts{
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 220px;
+  }
+}
 .whyMe__cart{
-  height:  385px;
-  width:  471px;
+  min-height: 385px;
+  min-width: 472px;
   background: #FFFFFF;
   box-shadow: 2px 8px 40px rgba(34, 34, 34, 0.39);
   border-radius: 15px;
@@ -123,6 +282,11 @@
   align-items: center;
   padding-top: 41px;
   text-align: center;
+}
+@media (max-width:426px){
+  .whyMe__cart{
+    min-width: 390px;
+  }
 }
 .whyMe__icon{
   width: 93px;
@@ -160,11 +324,24 @@
   grid-row-gap: 118px;
 }
 .services__cart{
-  height: 691px;
-  width: 471px;
+  min-height: 691px;
+  min-width: 471px;
   background: #FFFFFF;
   box-shadow: 2px 8px 40px rgba(222, 222, 222, 0.39);
   border-radius: 15px;
+}
+@media (max-width:1910px) {
+  .services__carts{
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 180px;
+  }
+}
+
+@media (max-width: 426px) {
+  .services__cart{
+    min-width: 370px;
+  }
 }
 .indent1{
   padding: 30px 0 0 34px;
@@ -240,16 +417,24 @@
   cursor: pointer;
   color: #A183D5;
 }
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .portfolio__main{
+  min-width: 1430px;
   margin-top: 108px;
   height: 732px;
   display: flex;
   gap: 40px;
-}
-.portfolio__arrow{
-  display: flex;
   align-items: center;
-  margin-bottom: 120px;
+}
+.portfolio__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .portfolio__text__title{
   color: #FFFFFF;
@@ -261,12 +446,8 @@
   color: #FFFFFF;
   font-size: 20px;
   font-weight: 500;
-  height: 459px;
-  width: 534px;
-}
-.portfolio__text__btn{
-  margin-top: 74px;
-  margin-left: 25px;
+  max-height: 459px;
+  max-width: 534px;
 }
 .portfolio__text__btn,.form__btn{
   border-radius: 15px;
@@ -283,18 +464,28 @@
   gap: 67px;
 }
 
-@keyframes name {
-  from {
-    opacity: .4
-  }
-  to{
-    opacity: 1;
-  }
-}
 .portfolio__footer{
   margin-top: 96px;
   display: flex;
   justify-content: center;
+}
+@media(max-width:1725px ) {
+  .img__portfolio{
+    height: 300px;
+  }
+  .portfolio__main{
+    justify-content: center;
+  }
+
+  .portfolio__carousel{
+    align-items: center;
+    flex-direction: column;
+
+  }
+  .portfolio__text__description{
+    height: 350px;
+  }
+
 }
 .dot{
   cursor: pointer;
@@ -309,25 +500,35 @@
 .dot:hover,.active{
   background-color:#717171
 }
+
 .form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 229px;
   height: 775px;
-  width:1500px;
+  max-width:1500px;
   background: radial-gradient(138.39% 433.8% at 115.8% -27.29%, #FBB1B9 8.19%, #8662CC 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
   border-radius: 40px;
 }
 .form__header{
-  display: flex;
-  justify-content: center;
+
+
+}
+@media (min-width: 425px){
+  .form__header{
+    text-align: center;
+  }
 }
 .form__title{
   margin-top: 90px;
 }
 .indent3{
-  margin: 76px 160px 0 160px;
+  margin: 76px 0
 }
 .form__main {
+  width: 75%;
   display: flex;
   justify-content: space-between;
 }
@@ -353,8 +554,25 @@
   gap: 22px;
   margin-top: 200px;
 }
-.form__inputs,.form__input{
-  width: 612px;
+@media (max-width: 426px){
+  .form{
+    min-height:860px
+  }
+  .form__social{
+    gap: 10px;
+    flex-direction: column;
+
+  }
+  .form__contact__text{
+  align-items: baseline;
+  }
+}
+.form__inputs{
+  min-width: 612px;
+}
+.form__input{
+  display: flex;
+  width: 100%;
 }
 .form__input{
   background: transparent;
@@ -376,6 +594,39 @@
   justify-content: flex-end;
   margin-top: 125px;
 }
+@media(max-width:1725px ) {
+  .form__main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .form__footer {
+    margin-top: 62px;
+  }
+
+  .form__contact {
+    width: 100%;
+  }
+  .form__contact__text {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form__social{
+    margin-top: 0;
+  }
+  .form__contact__header {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .form__footer{
+    margin-top: 31px;
+  }
+}
+@media(max-width:1050px){
+  .form__inputs{
+    min-width: 0;
+  }
+}
 .footer{
   margin-top: 146px;
   height: 100px;
@@ -387,6 +638,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 205px;
 }
 .footer__description{
   color: #FFFFFF;
@@ -398,8 +650,36 @@
   display: flex;
   gap: 45px;
 }
+@media (max-width: 1280px) {
+  .footer__main{
+    padding: 0 105px;
+  }
+}
+@media (max-width: 812px) {
+  .footer__main{
+    padding: 0 52px;
+  }
+}
+@media (max-width: 600px) {
+  .footer__main{
+    padding: 0 20px;
+  }
+}
+@media (max-width:426px){
+  .footer__social{
+    gap:15px;
+
+  }
+}
+
 :active, :hover, :focus {
   outline: 0;
   outline-offset: 0;
 }
+::-webkit-scrollbar {
+  visibility: hidden;
+  width: 0;
+}
+
+
 

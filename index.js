@@ -29,3 +29,25 @@ function showSlide(n){
     dots[slideIndex-1].className+= " active"
 }
 
+
+const menuBtn = document.querySelector('.menu__btn')
+const menu = document.querySelector('.nav__list')
+const category = document.querySelectorAll('.nav__item')
+
+
+menuBtn.addEventListener('click', function(){
+    menuBtn.classList.toggle('transform');
+    menu.classList.toggle('open');
+})
+function redirect(){
+    category.forEach((e)=>{
+        e.addEventListener('click',()=>{
+            menu.classList.remove('open');
+            menuBtn.classList.remove('transform');
+    })
+    })}
+redirect()
+
+
+
+

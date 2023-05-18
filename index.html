@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link rel="stylesheet" href="css.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,20 +11,25 @@
 </head>
 <body>
 <nav class="nav">
-    <div class="nav__wrapper indent">
+    <div class="nav__wrapper">
         <a href="#header">
     <img src="/assets/logo.svg" alt="Logo" style="cursor: pointer">
         </a>
+        <div class="menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul class="nav__list">
-            <a href="#whyMe" class="nav__item">Почему мы</a>
-            <a href="#services" class="nav__item">Услуги</a>
-            <a href="#portfolio" class="nav__item">Портфолио</a>
-            <a href="#form" class="nav__item">Контакты</a>
+            <li><a href="#whyMe" class="nav__item">Почему мы</a></li>
+            <li><a href="#services" class="nav__item">Услуги</a></li>
+            <li><a href="#portfolio" class="nav__item">Портфолио</a></li>
+            <li> <a href="#form" class="nav__item">Контакты</a></li>
         </ul>
     </div>
 </nav>
-
-<header class="header indent" id="header">
+<div id="header"></div>
+<header class="header indent" >
         <div class="header__text">
             <h1 class="header__title">Создание и разработка сайтов</h1>
             <p class="header__description">Ваша задача найти 15 полезных и популярных плагинов для Figma. Для этого нужно оформить документ, в котором будет такая структура:
@@ -35,16 +41,17 @@
             <a class="header__btn" href="#form">Заказать</a>
         </div>
         <div class="header__img">
-            <img src="/assets/photoTechnique.svg" alt="photoTechnique">
+            <img class="img__header" src="/assets/photoTechnique.svg" alt="photoTechnique">
         </div>
 </header>
 
 <main>
-<div class="whyMe" id="whyMe">
+    <div id="whyMe"></div>
+<div class="whyMe " >
     <div class="whyMe__header indent">
         <h2 class="whyMe__title">ПОЧЕМУ МЫ</h2>
     </div>
-    <div class="whyMe__carts indent" >
+    <div class="whyMe__carts indent hidden" >
         <div class="whyMe__cart" >
             <img class="whyMe__icon" src="assets/access-time.svg" alt="Time">
             <h3 class="whyMe__cart__title">В сроки сдаем работу</h3>
@@ -80,12 +87,12 @@
     </div>
 </div>
 
-
-    <div class="services indent" id="services">
+    <div id="services"></div>
+    <div class="services indent" >
         <div class="services__wrapper">
             <h2 class="services__title">НАШИ УСЛУГИ</h2>
         </div>
-        <div class="services__carts">
+        <div class="services__carts hidden">
             <div class="services__cart">
                 <div class="cart__header first indent1">
                     <div class="cart__header__text">
@@ -234,7 +241,8 @@
             </div>
         </div>
     </div>
-    <div class="portfolio" id="portfolio">
+    <div id="portfolio"></div>
+    <div class="portfolio" >
         <div class="portfolio__header indent">
             <h2 class="portfolio__title">ПОРТФОЛИО</h2>
         </div>
@@ -244,7 +252,7 @@
             </div>
             <div class="portfolio__carousel">
             <div class="portfolio__img">
-                <img style="cursor: pointer" src="assets/testImg.svg" alt="TestImg">
+                <img class="img__portfolio" style="cursor: pointer" src="assets/testImg.svg" alt="TestImg">
             </div>
             <div class="portfolio__text">
                 <h3 class="portfolio__text__title">Название проекта</h3>
@@ -254,7 +262,7 @@
             </div>
             <div class="portfolio__carousel">
                 <div class="portfolio__img">
-                    <img style="cursor: pointer" src="assets/testImg.svg" alt="TestImg">
+                    <img class="img__portfolio" style="cursor: pointer" src="assets/testImg.svg" alt="TestImg">
                 </div>
                 <div class="portfolio__text">
                     <h3 class="portfolio__text__title">1Название проекта</h3>
@@ -264,7 +272,7 @@
             </div>
             <div class="portfolio__carousel">
                 <div class="portfolio__img">
-                    <img style="cursor: pointer" src="assets/testImg.svg" alt="TestImg">
+                    <img class="img__portfolio" style="cursor: pointer" src="assets/testImg.svg" alt="TestImg">
                 </div>
                 <div class="portfolio__text">
                     <h3 class="portfolio__text__title">2Название проекта</h3>
@@ -274,12 +282,15 @@
             </div>
             <div class="portfolio__carousel">
                 <div class="portfolio__img">
-                    <img style="cursor: pointer" src="assets/testImg.svg" alt="TestImg">
+                    <img class="img__portfolio" style="cursor: pointer" src="assets/testImg.svg" alt="TestImg">
                 </div>
+
                 <div class="portfolio__text">
+                    <div class="portfolio__text__header">
                     <h3 class="portfolio__text__title">3Название проекта</h3>
-                    <p class="portfolio__text__description">3Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.</p>
-                    <button class="portfolio__text__btn">Смотреть</button>
+                    <p class="portfolio__text__description">3Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.</p>
+                    </div>
+                        <button class="portfolio__text__btn">Смотреть</button>
                 </div>
             </div>
             <div class="portfolio__arrow ">
@@ -293,21 +304,30 @@
             <span class="dot" onclick="currentSlide(4)"></span>
         </div>
     </div>
-    <div class="form indent" id="form">
+    <div id="form"></div>
+    <div class="form indent" >
         <div class="form__header">
             <h2 class="form__title">ОБРАТНАЯ СВЯЗЬ</h2>
         </div>
         <div class="form__main indent3">
             <div class="form__contact">
+                <div class="form__contact__header">
                 <h3 class="form__contact__title">КОНТАКТЫ</h3>
+                </div>
+                <div class="form__contact__text">
+                <div>
                 <p class="form__contact__description">E-mail:</p>
                 <p class="form__contact__info">shfbsejbfjebf</p>
+                </div>
+                <div>
                 <p class="form__contact__description">Телефон:</p>
                 <p class="form__contact__info">shfbsejbfjebf</p>
+                </div>
                 <div class="form__social">
                     <img style="cursor: pointer;" src="assets/vk.svg" alt="Vk">
                     <img style="cursor: pointer;" src="assets/telegram.svg" alt="Telegram">
                     <img style="cursor: pointer;" src="assets/whatsapp.svg" alt="Whatsapp">
+                </div>
                 </div>
             </div>
             <form class="form__inputs">
@@ -321,8 +341,9 @@
         </div>
     </div>
 </main>
-<footer class="footer" id="footer">
-    <div class="footer__main indent">
+<div id="footer"></div>
+<footer class="footer" >
+    <div class="footer__main">
         <div class="footer__text">
             <p class="footer__description">MEA DEV © Все права защищены</p>
         </div>
