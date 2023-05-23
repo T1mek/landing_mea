@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
-    <link rel="stylesheet" href="css.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css" >
 </head>
 <body>
 <nav class="nav">
@@ -51,7 +51,11 @@
     <div class="whyMe__header indent">
         <h2 class="whyMe__title">ПОЧЕМУ МЫ</h2>
     </div>
-    <div class="whyMe__carts indent hidden" >
+    <div class="whyMe__main indent">
+        <div class="portfolio__arrow whyMe__arrow">
+            <img class="right"  style="cursor: pointer" src="assets/arrowLeft.svg" alt="Arrow">
+        </div>
+    <div class="whyMe__carts hidden" >
         <div class="whyMe__cart" >
             <img class="whyMe__icon" src="assets/access-time.svg" alt="Time">
             <h3 class="whyMe__cart__title">В сроки сдаем работу</h3>
@@ -85,6 +89,10 @@
             <p class="whyMe__cart__description">Мы не нарушаем сроков разработки, так как в команде чётко распределены обязанности</p>
         </div>
     </div>
+        <div class="portfolio__arrow ">
+            <img class="right whyMe__arrow" style="cursor: pointer" src="assets/arrowRight.svg" alt="Arrow">
+        </div>
+    </div>
 </div>
 
     <div id="services"></div>
@@ -92,6 +100,10 @@
         <div class="services__wrapper">
             <h2 class="services__title">НАШИ УСЛУГИ</h2>
         </div>
+        <div class="services__main">
+            <div class="portfolio__arrow">
+                <img class="right services__arrow" style="cursor: pointer" src="assets/arrowLeftServices.svg" alt="Arrow">
+            </div>
         <div class="services__carts hidden">
             <div class="services__cart">
                 <div class="cart__header first indent1">
@@ -106,11 +118,11 @@
                     <p class="cart__main__title">Количество блоков: 1-3 </p>
                     <p class="cart__main__title"> Примерные сроки: 5-10 дней</p>
                     <ul class="cart__main__items">
-                        <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Адаптивный сайт</p></li>
-                        <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Унифицированный дизайн</p></li>
-                        <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Активные формы обратной связи</p></li>
-                        <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Базовая SEO настройка</p></li>
-                        <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Поддержка сайта в течение месяца </p></li>
+                        <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Адаптивный сайт</p></li>
+                        <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Унифицированный дизайн</p></li>
+                        <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Активные формы обратной связи</p></li>
+                        <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Базовая SEO настройка</p></li>
+                        <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Поддержка сайта в течение месяца </p></li>
                     </ul>
                 </div>
                 <div class="cart__footer indent2">
@@ -130,11 +142,11 @@
                         <p class="cart__main__title">Количество блоков: 1-10  </p>
                         <p class="cart__main__title"> Примерные сроки: 15-28 дней</p>
                         <ul class="cart__main__items">
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Адаптивный сайт</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Уникальный дизайн</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Базовая SEO настройка</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Домен на 1 год и хостинг</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Поддержка сайта в течение месяца </p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Адаптивный сайт</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Уникальный дизайн</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Базовая SEO настройка</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Домен на 1 год и хостинг</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Поддержка сайта в течение месяца </p></li>
                         </ul>
                     </div>
                     <div class="cart__footer indent2">
@@ -154,11 +166,11 @@
                         <p class="cart__main__title">Количество блоков: неограничено </p>
                         <p class="cart__main__title"> Примерные сроки: 17-32 дней</p>
                         <ul class="cart__main__items">
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Адаптивный сайт</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Уникальный дизайн</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Базовая SEO настройка</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Домен на 1 год и хостинг</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Поддержка сайта в течение месяца </p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Адаптивный сайт</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Уникальный дизайн</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Базовая SEO настройка</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Домен на 1 год и хостинг</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Поддержка сайта в течение месяца </p></li>
                         </ul>
                     </div>
                     <div class="cart__footer indent2">
@@ -178,11 +190,11 @@
                         <p class="cart__main__title">Количество блоков: 1-3 </p>
                         <p class="cart__main__title"> Примерные сроки: 5-10 дней</p>
                         <ul class="cart__main__items">
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Адаптивный сайт</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Уникальный дизайн</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Базовая SEO настройка</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Домен на 1 год и хостинг</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Поддержка сайта в течение месяца </p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Адаптивный сайт</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Уникальный дизайн</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Базовая SEO настройка</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Домен на 1 год и хостинг</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Поддержка сайта в течение месяца </p></li>
                         </ul>
                     </div>
                     <div class="cart__footer indent2">
@@ -202,12 +214,12 @@
                         <p class="cart__main__title">Количество блоков: неограничено </p>
                         <p class="cart__main__title"> Примерные сроки: от 8 дней</p>
                         <ul class="cart__main__items">
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Бриф</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Анализ ниши и конкурентов</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Проектирование</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Сбор референсов</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Прототип </p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Уникальный дизайн </p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Бриф</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Анализ ниши и конкурентов</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Проектирование</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Сбор референсов</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Прототип </p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Уникальный дизайн </p></li>
                         </ul>
                     </div>
                     <div class="cart__footer">
@@ -227,17 +239,21 @@
                         <p class="cart__main__title">Количество блоков: неограничено </p>
                         <p class="cart__main__title"> Примерные сроки: от 8 дней</p>
                         <ul class="cart__main__items">
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">SEO-аналитика</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Конверсионная оптимизация</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">SEO-копирайтинг</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Контент-оптимизация</p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Комплексное продвижение </p></li>
-                            <li><img src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Техническая оптимизация </p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">SEO-аналитика</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Конверсионная оптимизация</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">SEO-копирайтинг</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Контент-оптимизация</p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Комплексное продвижение </p></li>
+                            <li><img class="checkMark" src="assets/checkMark.svg" alt="checkMark"> <p class="cart__main__description">Техническая оптимизация </p></li>
                         </ul>
                     </div>
                     <div class="cart__footer">
                         <a class="cart__footer__btn" href="#form">Заказать</a>
                     </div>
+            </div>
+        </div>
+            <div class="portfolio__arrow ">
+                <img class="right services__arrow " style="cursor: pointer" src="assets/arrowRightServices.svg" alt="Arrow">
             </div>
         </div>
     </div>
@@ -286,11 +302,9 @@
                 </div>
 
                 <div class="portfolio__text">
-                    <div class="portfolio__text__header">
                     <h3 class="portfolio__text__title">3Название проекта</h3>
                     <p class="portfolio__text__description">3Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.</p>
-                    </div>
-                        <button class="portfolio__text__btn">Смотреть</button>
+                    <button class="portfolio__text__btn">Смотреть</button>
                 </div>
             </div>
             <div class="portfolio__arrow ">
